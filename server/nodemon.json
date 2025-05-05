@@ -1,0 +1,19 @@
+{
+  "watch": ["src/", "config/"],
+  "ext": ".ts,.js,.json",
+  "ignore": [
+    "node_modules/",
+    "dist/",
+    "coverage/",
+    "**/*.test.ts",
+    "**/*.spec.ts"
+  ],
+  "exec": "ts-node ./src/app.ts",
+  "execMap": {
+    "ts": "ts-node"
+  },
+  "env": {
+    "NODE_ENV": "development",
+    "port": 3000
+  }
+}
